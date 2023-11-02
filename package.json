@@ -1,0 +1,15 @@
+{
+  "name": "task4-mortgage-repayment-calculator",
+  "version": "1.0.0",
+  "description": "JavaScript integration of linear regression",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/stylesheet.css -o public/stylesheet.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
