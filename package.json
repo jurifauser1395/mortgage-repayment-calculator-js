@@ -4,7 +4,7 @@
   "description": "JavaScript integration of linear regression",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/stylesheet.css -o public/stylesheet.css"
+    "build-css": "npx tailwindcss -i src/stylesheet.css -o public/stylesheet.css --watch "
   },
   "keywords": [],
   "author": "",
