@@ -6,24 +6,28 @@
        <!--<link rel="stylesheet" href="pub/output.css">-->
    </head>
    <body>
-          <form id="dataEntrance">
+          <form>
           <h1>Mortgage Repayment Calculator</h1>
                  <h2>Enter Fields</h2>
 
                  <label for="principalLoan">Principal loan:</label>
-                 <input type="text" id="principalLoan"><br><br>
+                 <input type="text" id="principalLoan">
+                 <span id="error1"></span><br><br>
 
                  <label for="monthlyInterestRate">Annual interest rate:</label>
-                 <input type="text" id="monthlyInterestRate"><br><br>
+                 <input type="text" id="monthlyInterestRate">
+                 <span id="error2"></span><br><br>
 
                  <label for="numberOfYearsPayments">Desired payment span:</label>
-                 <input type="text" id="numberOfYearsPayments"><br><br>
+                 <input type="text" id="numberOfYearsPayments">
+                 <span id="error3"></span><br><br>
 
                  <button type="button" id="calculateButton">Calculate</button>
 
           </form>
-   <h2>Monthly Amortization Schedule</h2>
           <p>Result: <span id="result"></span></p>
+   <h2>Monthly Amortization Schedule</h2>
+
    <script src="app.js"></script>
    </body>
    </html>
