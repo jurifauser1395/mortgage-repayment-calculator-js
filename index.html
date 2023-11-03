@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Mortgage Repayment Calculator</title>
-    <link rel="stylesheet" href="pub/output.css">
-</head>
-<body>
-<h1 class="text-2xl font-bold">Mortgage Repayment Calculator</h1>
-       <h2>Choose what you want to calculate:</h2>
-       <button type="submit">Total Mortgage Duration</button>
-       <button type="button">Monthly Payment Calculation</button><br><br>
-       <label>Principal loan amount:
-              <input type="text"><br>
-       </label><br>
-       <label>Annual interest rate:
-              <input type="text"><br>
-       </label><br>
-       <label>Desired payment span:
-              <input type="text"><br>
-       </label><br>
-       <button type="button" id="myButton">submit</button>
-       <h2>Monthly Amortization Schedule:</h2>
-</body>
-</html>
+       <!--<link rel="stylesheet" href="pub/output.css">-->
+   </head>
+   <body>
+          <form id="dataEntrance">
+          <h1>Mortgage Repayment Calculator</h1>
+                 <h2>Enter Fields</h2>
+
+                 <label for="principalLoan">Principal loan:</label>
+                 <input type="text" id="principalLoan"><br><br>
+
+                 <label for="monthlyInterestRate">Annual interest rate:</label>
+                 <input type="text" id="monthlyInterestRate"><br><br>
+
+                 <label for="numberOfYearsPayments">Desired payment span:</label>
+                 <input type="text" id="numberOfYearsPayments"><br><br>
+
+                 <button type="button" id="calculateButton">Calculate</button>
+
+          </form>
+   <h2>Monthly Amortization Schedule</h2>
+          <p>Result: <span id="result"></span></p>
+   <script src="app.js"></script>
+   </body>
+   </html>
