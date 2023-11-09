@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Mortgage Repayment Calculator</title>
-       <!--<link rel="stylesheet" href="pub/output.css">-->
-   </head>
-   <body>
-          <form>
-          <h1>Mortgage Repayment Calculator</h1>
-                 <h2>Enter Fields</h2>
+</head>
+<body>
+<h1>Mortgage Repayment Calculator</h1>
+<h2>Please enter your mortgage conditions into the fields below</h2>
+<form>
+    <label for="principalLoan">Principal loan in USD:</label>
+    <input type="text" id="principalLoan">
+    <span id="error1"></span><br><br>
 
-                 <label for="principalLoan">Principal loan in USD:</label>
-                 <input type="text" id="principalLoan">
-                 <span id="error1"></span><br><br>
+    <label for="yearlyInterestRate">Annual interest rate in %:</label>
+    <input type="text" id="yearlyInterestRate">
+    <span id="error2"></span><br><br>
 
-                 <label for="yearlyInterestRate">Annual interest rate in %:</label>
-                 <input type="text" id="yearlyInterestRate">
-                 <span id="error2"></span><br><br>
+    <label for="numberOfYearsPayments">Desired payment span in years:</label>
+    <input type="text" id="numberOfYearsPayments">
+    <span id="error3"></span><br><br>
 
-                 <label for="numberOfYearsPayments">Desired payment span in years:</label>
-                 <input type="text" id="numberOfYearsPayments">
-                 <span id="error3"></span><br><br>
-
-                 <button type="button" id="calculateButton">Calculate</button>
-
-          </form>
-          <p>Monthly payment: <span id="resultMonthly"></span></p>
-          <p>Total interest paid: <span id="resultTotalInterestPaid"></span></p>
-          <p>Total payment: <span id="resultTotalPayment"></span></p>
-   <h2>Monthly Amortization Schedule</h2>
-          <p><span id="tableResult1"></span></p>
-          <p>Result: <span id="tableResult2"></span></p>
-   <script src="app.js"></script>
-   </body>
-   </html>
+    <button type="button" id="calculateButton">Calculate</button>
+</form>
+<p><span id = "error4"></span></p>
+<p>Monthly payment: <span id="resultMonthly"></span></p>
+<p>Total interest paid: <span id="resultTotalInterestPaid"></span></p>
+<p>Total payment: <span id="resultTotalPayment"></span></p>
+<h2>Amortization Schedule</h2>
+<table id="tableResult"></table>
+<script src="app.js"></script>
+</body>
+</html>
