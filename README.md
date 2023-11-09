@@ -1,5 +1,5 @@
-# task4-linear-regression-js
-JavaScript integration of linear regression
+# task4-mortgage-repayment-js
+JavaScript's integration of  mortgage repayment
 
 ## purpose for this repository
-This repository will be implementing an algorithm for linear regression
+This repository will be implementing an algorithm for mortgage repayment 
