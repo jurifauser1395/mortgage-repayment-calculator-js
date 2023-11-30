@@ -46,7 +46,7 @@ function monthlyAmortizationSchedule(P, r, n, M, i) {
         // Pass the calculated values into the table
         if (i % 12 === 0) { // Check if a year has passed
             let row = tableResult.insertRow(-1); // Create a new row at the end of the table
-            let cell0 = row.insertCell(-1)
+            let cell0 = row.insertCell(-1)  // Create a new cell in the row
             let cell1 = row.insertCell(-1); // Create a new cell in the row
             let cell2 = row.insertCell(-1); // Create a new cell in the row
             let cell3 = row.insertCell(-1); // Create a new cell in the row
